@@ -1,0 +1,177 @@
+{
+  "info": {
+    "name": "Tarefa API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Criar Tarefa - Desenvolvimento da API (obrigatório)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Desenvolvimento da API\",\n  \"dataEntrega\": \"2025-12-12\",\n  \"responsavel\": \"Gregório4629248\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar Tarefa - Exemplo 2",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Corrigir bugs do módulo X\",\n  \"dataEntrega\": \"2025-11-20\",\n  \"responsavel\": \"Gregório4629248\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Criar Tarefa - Exemplo 3",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Documentação do endpoint\",\n  \"dataEntrega\": \"2025-10-01\",\n  \"responsavel\": \"Gregório4629248\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Listar tarefas",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar tarefa por id (substitua :id)",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Atualizar tarefa por id (substitua :id)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Desenvolvimento da API - versão final\",\n  \"dataEntrega\": \"2025-12-12\",\n  \"responsavel\": \"Gregório4629248\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Deletar tarefa por id (substitua :id)",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8080/api/tarefas/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "tarefas",
+            ":id"
+          ]
+        }
+      }
+    }
+  ]
+}
